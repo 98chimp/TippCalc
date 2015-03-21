@@ -14,9 +14,30 @@
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [UIView animateWithDuration:0.2
+                          delay:0
+                        options: UIViewAnimationCurveEaseIn
+                     animations:^{
+                         self.window.viewForBaselineLayout.alpha = 0; // and at this alpha
+                     }
+                     completion:^(BOOL finished){
+                     }];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [UIView animateWithDuration:1.0
+                          delay:0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         self.window.viewForBaselineLayout.alpha = 1; // and at this alpha
+                     }
+                     completion:^(BOOL finished){
+                     }];
     return YES;
 }
 
