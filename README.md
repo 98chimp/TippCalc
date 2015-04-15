@@ -2,4 +2,4 @@
 
 A simple, elegant and functional tip calculator and bill splitter iPhone app written in Objective C.
 
-![Alt text](https://www.dropbox.com/s/8yok2bi5wpesz16/TipCalculator.mp4?dl=0 "Optional title")
+![Alt text](https://www.dropbox.com/s/8yok2bi5wpesz16/TipCalculator.mp4?raw=true "TipCalculator/BillSplitter")
